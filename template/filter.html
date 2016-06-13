@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../lib/angular.min.js"></script>
+    <script src="../js/filter.js"></script>
+    <title></title>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+
+<!--{{ 12 | currency: '￥':0}} <br>-->
+
+<!--{{1288323623006 | date:'MM/dd/yyyy h:mma'}}-->
+
+<!--<div ng-repeat="user in userList | filter: 't'">-->
+<!--<p>Name: {{user.name}}</p>-->
+<!--<p>Age: {{user.age}}</p>-->
+<!--<p>Address: {{user.address}}</p> <br>-->
+<!--</div>-->
+
+<!--<div ng-repeat="user in userList | filter: {name: 't'}">-->
+<!--<p>Name: {{user.name}}</p>-->
+<!--<p>Name: {{user.age}}</p>-->
+<!--<p>Name: {{user.address}}</p> <br>-->
+<!--</div>-->
+
+<!--<div ng-repeat="user in userList | limitTo: 2">-->
+<!--<p>Name: {{user.name}}</p>-->
+<!--<p>Name: {{user.age}}</p>-->
+<!--<p>Name: {{user.address}}</p> <br>-->
+<!--</div>-->
+
+<!--<div ng-repeat="user in userList | filter: myFilter">-->
+<!--<p>Name: {{user.name}}</p>-->
+<!--<p>Name: {{user.age}}</p>-->
+<!--<p>Name: {{user.address}}</p> <br>-->
+<!--</div>-->
+
+<!--<div ng-repeat="user in userList">-->
+<!--<p>Name: {{user.name | uppercase}}</p>-->
+<!--<p>Name: {{user.age}}</p>-->
+<!--<p>Name: {{user.address}}</p> <br>-->
+<!--</div>-->
+
+<!--<div ng-repeat="user in userList | orderBy: 'name'">-->
+<!--<p>Name: {{user.name | uppercase}}</p>-->
+<!--<p>Name: {{user.age}}</p>-->
+<!--<p>Name: {{user.address}}</p> <br>-->
+<!--</div>-->
+
+<div ng-repeat="user in userList">
+    <p>Name: {{user.name | upperCaseFilter}}</p>
+    <p>Name: {{user.age}}</p>
+    <p>Name: {{user.address| upperCaseFilter}}</p> <br>
+</div>
+
+</body>
+</html>

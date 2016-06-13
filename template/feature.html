@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../lib/angular.min.js"></script>
+    <script src="../js/feature.js"></script>
+    <title></title>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myController">
+    <p>Name: <input type="text" ng-model="name"/></p>
+        <h1>Hello {{name}}</h1>
+        <button ng-click="changeValue()">Click Me</button>
+        <br/><br/><br/>
+        <span ng-bind="spanValue"></span>
+    </div>
+
+    <div ng-controller="controllerParams">
+        <h1>{{name}}</h1>
+    </div>
+    <div ng-controller="controllerArray">
+        <h1>{{name}}</h1>
+        <h1>{{rootName}}</h1>
+    </div>
+    <div ng-controller="controllerInject">
+        <h1>{{name}}</h1>
+    </div>
+</body>
+</html>

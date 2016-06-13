@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../lib/angular.min.js"></script>
+    <script src="../js/directive.js"></script>
+    <link rel="stylesheet" href="../css/demo.css"/>
+    <title></title>
+</head>
+<body ng-app="myApp" ng-controller="expendController">
+    <hello>Test</hello>
+    <div hello>Test1</div>
+    <!--<div class="hello">Test2</div>-->
+    <!--<div ng-controller="expendController">-->
+        <!--<expander class="expander" expander-title="title">-->
+            <!--{{text}}-->
+        <!--</expander>-->
+    <!--</div>-->
+    <accordion>
+        <expanders class="expander" ng-repeat="expander in expanders" expander-title="expander.title">
+            {{expander.text}}
+        </expanders>
+    </accordion>
+</body>
+
+<script type="text/ng-template" id="demoTemplateURL">
+    <div>Demo Template Harry</div>
+</script>
+</html>

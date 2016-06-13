@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <script src="../lib/angular.min.js"></script>
+    <script src="../js/transform.js"></script>
+    <script src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/demo.css"/>
+    <title></title>
+</head>
+<body ng-controller="myController">
+    <div class="origianl">
+        <p>原始数据</p>
+        <div>
+            {{original}} <br/>
+            JSON? {{isJson}}
+        </div>
+    </div>
+   <div class="final">
+       <p>处理后数据</p>
+       <div>
+           {{final}}
+       </div>
+   </div>
+</body>
+</html>
